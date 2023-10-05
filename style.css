@@ -26,6 +26,9 @@ header {
 }
 
 /* Navigation Styles */
+nav {
+    background-color: #2c3e50;
+}
 
 nav ul {
     list-style: none;
@@ -68,11 +71,13 @@ footer {
 
 /* Add more custom styles as needed */
 
-img.w-40px.profile-pic.mx-auto {
+/* Profile Picture Styles */
+.profile-picture {
+    width: 150px;
     height: 150px;
-    width: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /* border: 19px; */
-    border-radius: 20%;
+    border-radius: 50%;
+    background-image: url('your-profile-picture.jpg');
+    background-size: cover;
+    margin: 20px auto;
+    display: block;
 }
