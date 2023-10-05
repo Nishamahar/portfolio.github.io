@@ -26,9 +26,6 @@ header {
 }
 
 /* Navigation Styles */
-nav {
-    background-color: #2c3e50;
-}
 
 nav ul {
     list-style: none;
@@ -44,7 +41,6 @@ nav ul li {
 /* Hero Section Styles */
 header h1 {
     font-size: 3rem;
-    <img src="img_avatar.png" alt="Avatar" style="width:200px">
 }
 
 /* About Section Styles */
@@ -72,13 +68,11 @@ footer {
 
 /* Add more custom styles as needed */
 
-/* Profile Picture Styles */
-.profile-picture {
-    width: 150px;
+img.w-40px.profile-pic.mx-auto {
     height: 150px;
-    border-radius: 50%;
-    background-image: url('your-profile-picture.jpg');
-    background-size: cover;
-    margin: 20px auto;
-    display: block;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 19px; */
+    border-radius: 20%;
 }
