@@ -196,16 +196,59 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
-            <img src="contact.jpg" style="max: width 50px;;height: 50px;;">
+    <!-- Contact Form Section -->
+<section id="contact" class="py-16">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
 
-            <p>I'm always open to new opportunities, collaborations, and learning experiences. Feel free to reach out to me via email at [maharnisha140@gmail.com] or connect with me on LinkedIn. Let's explore the endless possibilities of technology together!
+        <!-- Contact Form -->
+        <form action="submit_form.php" method="post" class="max-w-lg mx-auto">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-medium">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required
+                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-medium">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required
+                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-medium">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message here" required
+                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none"></textarea>
+            </div>
+            <div class="mb-6">
+                <button type="submit"
+                    class="bg-indigo-600 text-white py-2 px-4 rounded-full hover:bg-green-700 text-lg transition duration-300 ease-in-out">Send
+                    Message</button>
+            </div>
+        </form>
+    </div>
+</section>
 
-            </p>
-            <!-- Your contact form goes here -->
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto flex justify-between items-center">
+        <div>
+            <h2 class="text-xl font-semibold">Contact Information</h2>
+            <p>Email: maharnisha140@gmail.com</p>
+            <p>Phone: +91 6398310487</p>
+        </div>
+        <div>
+            <!-- Add your social media icons and links here -->
+            <a href="#" class="text-white hover:text-gray-400 mr-4">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M17.25 2.75A2.74 2.74 0 0014.5 0H5.5A2.74 2.74 0 002.75 2.75L2 7.82C2 12.69 5.86 17 10 17s8-4.31 8-9.18l-.75-5.07zm-2.43 7.89a5.58 5.58 0 01-.34 1.76 2.59 2.59 0 01-1.14 1.14c-.5.27-.9.46-1.58.46s-1.08-.19-1.58-.46a2.59 2.59 0 01-1.14-1.14 5.58 5.58 0 01-.34-1.76 4.71 4.71 0 01.34-1.76 2.59 2.59 0 011.14-1.14c.5-.27.9-.46 1.58-.46s1.08.19 1.58.46c.43.24.77.57 1.14 1.14.31.59.57 1.33.34 2.16z" />
+                </svg>
+            </a>
+            <!-- Add more social media icons and links as needed -->
+        </div>
+    </div>
+</footer>
+
+     <!-- Your contact form goes here -->
         </div>
     </section>
     <!-- Footer Section -->
