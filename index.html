@@ -1,53 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <title>Nisha Mahar - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-gray-100 font-sans">
     <!-- Navigation -->
-    
-   <!-- Header Section -->
-    <!-- Header Section -->
-<header class="bg-indigo-600 py-6">
-    <div class="container mx-auto flex justify-between items-center">
-        <!-- Logo/Home Link -->
-        <a href="#" class="text-white text-2xl font-semibold">Nisha Mahar</a>
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <a href="#" class="text-indigo-600 text-2xl font-semibold">Nisha Mahar</a>
 
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden relative">
-            <button id="mobile-menu-button" class="text-white focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    class="h-6 w-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-            <!-- Mobile Menu Dropdown -->
-            <div id="mobile-menu" class="absolute top-12 right-0 mt-2 bg-white rounded-lg shadow-md hidden">
-                <ul class="py-2 px-4">
-                    <li><a href="#home" class="block text-indigo-600 hover:text-indigo-700 py-1">Home</a></li>
-                    <li><a href="#projects" class="block text-indigo-600 hover:text-indigo-700 py-1">Projects</a></li>
-                    <li><a href="#about" class="block text-indigo-600 hover:text-indigo-700 py-1">About</a></li>
-                    <li><a href="#contact" class="block text-indigo-600 hover:text-indigo-700 py-1">Contact</a></li>
-                </ul>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden relative">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <!-- Mobile Menu Dropdown -->
+                <div id="mobile-menu" class="absolute top-16 right-0 mt-2 bg-white rounded-lg shadow-md hidden">
+                    <ul class="py-2 px-4">
+                        <li><a href="#home" class="block text-indigo-600 hover:text-indigo-700 py-1">Home</a></li>
+                        <li><a href="#projects" class="block text-indigo-600 hover:text-indigo-700 py-1">Projects</a></li>
+                        <li><a href="#about" class="block text-indigo-600 hover:text-indigo-700 py-1">About</a></li>
+                        <li><a href="#contact" class="block text-indigo-600 hover:text-indigo-700 py-1">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <!-- Desktop Menu -->
-        <nav class="hidden md:flex space-x-6">
-            <a href="#home" class="text-white hover:text-gray-400">Home</a>
-            <a href="#projects" class="text-white hover:text-gray-400">Projects</a>
-            <a href="#about" class="text-white hover:text-gray-400">About</a>
-            <a href="#contact" class="text-white hover:text-gray-400">Contact</a>
-        </nav>
-    </div>
-</header>
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-600">Projects</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-600">About</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero relative bg-cover bg-center h-screen" style="background-image: url('hero1.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto text-center relative z-10 flex flex-col justify-center h-full">
+            <h1 class="text-4xl text-white font-semibold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg text-white mb-8">Explore my work and skills in the world of technology.</p>
+            <a href="#portfolio" class="bg-indigo-600 text-white py-2 px-4 rounded-full hover:bg-green-700 text-lg transition duration-300 ease-in-out">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Header Section -->
+    <header class="bg-indigo-600 py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-semibold">Nisha Mahar</a>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden relative">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <!-- Mobile Menu Dropdown -->
+                <div id="mobile-menu" class="absolute top-16 right-0 mt-2 bg-white rounded-lg shadow-md hidden">
+                    <ul class="py-2 px-4">
+                        <li><a href="#home" class="block text-indigo-600 hover:text-indigo-700 py-1">Home</a></li>
+                        <li><a href="#projects" class="block text-indigo-600 hover:text-indigo-700 py-1">Projects</a></li>
+                        <li><a href="#about" class="block text-indigo-600 hover:text-indigo-700 py-1">About</a></li>
+                        <li><a href="#contact" class="block text-indigo-600 hover:text-indigo-700 py-1">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-600">Projects</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-600">About</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+            </nav>
+        </div>
+    </header>
 
     <!-- Your other page content -->
+
+    <!-- Include JavaScript and jQuery for mobile menu functionality -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mobile-menu-button").click(function () {
+                $("#mobile-menu").toggle();
+            });
+        });
+    </script>
+
+    <!-- Include Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
