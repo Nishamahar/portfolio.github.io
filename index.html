@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,14 +6,28 @@
     <title>Your Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Center content horizontally and vertically */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Adjust container width */
+        .container {
+            width: 90%;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
     
-   <!-- Header Section -->
- <!-- Header Section -->
-<header class="bg-indigo-600 py-6">
-    <div class="container mx-auto flex justify-between items-center">
+    <!-- Header Section -->
+    <header class="bg-indigo-600 py-16 text-center mx-auto">
         <!-- Custom Logo and Tagline -->
         <div class="flex items-center">
             <img src="hero.JPG" alt="Your Logo" class="w-10 h-10 mr-2">
@@ -50,10 +64,7 @@
             <a href="#about" class="text-white hover:text-gray-400">About</a>
             <a href="#contact" class="text-white hover:text-gray-400">Contact</a>
         </nav>
-    </div>
-</header>
-
-   
+    </header>
 
     <!-- Your other page content -->
 
@@ -66,223 +77,210 @@
         });
     </script>
 
-
-
-
-            </ul>
-        </div>
-    </nav>
-
     <!-- Hero Section -->
     <!-- Hero Section with Image -->
-<section class="hero relative" style="background-image: url('hero1.jpg');">
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="container mx-auto text-center relative z-10">
-        <h1 class="text-4xl text-white font-semibold mb-4">Welcome to My Portfolio</h1>
-        <p class="text-lg text-white mb-8">Explore my work and skills in the world of technology.</p>
-        <a href="#portfolio" class="bg-indigo-600 text-white py-2 px-4 rounded-full hover:bg-green-700 text-lg transition duration-300 ease-in-out">View Portfolio</a>
+    <section class="hero relative" style="background-image: url('hero1.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl text-white font-semibold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg text-white mb-8">Explore my work and skills in the world of technology.</p>
+            <a href="#portfolio" class="bg-indigo-600 text-white py-2 px-4 rounded-full hover:bg-green-700 text-lg transition duration-300 ease-in-out">View Portfolio</a>
+        </div>
+    </section>
 
-        
-    </div>
-</section>
-
-<!-- Header Section -->
-<header class="bg-indigo-600 py-16 text-center">
-    <div class="container mx-auto">
-        <h1 class="text-4xl text-white">Nisha Mahar</h1>
-        <img src="hero.JPG" alt="HERO Logo" class="w-40px profile-pic mx-auto">
-        <p class="text-lg text-white mt-4">Software Engineer & Tester</p>
-        <p class="text-lg text-white mt-2">Creating quality software and ensuring reliability.</p>
-    </div>
-</header>
+    <!-- Header Section -->
+    <header class="bg-indigo-600 py-16 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl text-white">Nisha Mahar</h1>
+            <img src="hero.JPG" alt="HERO Logo" class="w-40px profile-pic mx-auto">
+            <p class="text-lg text-white mt-4">Software Engineer & Tester</p>
+            <p class="text-lg text-white mt-2">Creating quality software and ensuring reliability.</p>
+        </div>
+    </header>
 
     <!-- About Section -->
-    <section id="about" class="py-16">
-        <div class="container mx-auto">
+<section id="about" class="py-16 mx-auto">       
+ <div class="container mx-auto">
             <h2 class="text-3xl font-semibold mb-8">About Me</h2>
             <p class="text-gray-700">Hello! I'm Nisha Mahar, a passionate and dedicated software enthusiast who is eager to embark on a rewarding career in the tech industry. As a fresher, I bring a strong foundation in web development and testing, coupled with a determination to learn and grow in the field.</p>
         </div>
     </section>
- <!-- Education Section -->
-<section id="education" class="py-16">
-    <div class="container mx-auto">
-        <h2 class="text-3xl font-semibold mb-8">Education</h2>
-        
-        <!-- Education Item 1 -->
-        <div class="mb-8">
-            <h3 class="text-xl font-semibold">Bachelor's Degree in Computer Science</h3>
-            <p class="text-gray-700">XYZ University</p>
-            <p class="text-gray-700">Graduated: May 20XX</p>
+    
+    <!-- Education Section -->
+    <section id="education" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-8">Education</h2>
+            
+            <!-- Education Item 1 -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">Bachelor's Degree in Computer Science</h3>
+                <p class="text-gray-700">XYZ University</p>
+                <p class="text-gray-700">Graduated: May 20XX</p>
+            </div>
+            
+            <!-- Education Item 2 -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">High School Diploma</h3>
+                <p class="text-gray-700">ABC High School</p>
+                <p class="text-gray-700">Graduated: May 20XX</p>
+            </div>
+            
+            <!-- Add more education items as needed -->
         </div>
-        
-        <!-- Education Item 2 -->
-        <div class="mb-8">
-            <h3 class="text-xl font-semibold">High School Diploma</h3>
-            <p class="text-gray-700">ABC High School</p>
-            <p class="text-gray-700">Graduated: May 20XX</p>
-        </div>
-        
-        <!-- Add more education items as needed -->
-    </div>
-</section>
+    </section>
 
     <!-- Projects Section -->
-<section id="projects" class="py-16">
-    <div class="container mx-auto">
-        <h2 class="text-3xl font-semibold mb-8">Projects</h2>
-        <img src="projects.jpg" alt="HTML Logo" class="w-16 h-16 mx-auto my-4">
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Project Card 1 -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Project 1</h3>
-                <p class="text-gray-700">Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-indigo-600 hover:underline mt-2 block">View Details</a>
+<section id="projects" class="py-16 mx-auto">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-8">Projects</h2>
+            <img src="projects.jpg" alt="HTML Logo" class="w-16 h-16 mx-auto my-4">
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Project 1</h3>
+                    <p class="text-gray-700">Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 block">View Details</a>
+                </div>
+    
+                <!-- Project Card 2 -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Project 2</h3>
+                    <p class="text-gray-700">Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 block">View Details</a>
+                </div>
+    
+                <!-- Project Card 3 -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Project 3</h3>
+                    <p class="text-gray-700">Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 block">View Details</a>
+                </div>
+    
+                <!-- Add more project cards as needed -->
             </div>
-
-            <!-- Project Card 2 -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Project 2</h3>
-                <p class="text-gray-700">Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-indigo-600 hover:underline mt-2 block">View Details</a>
-            </div>
-
-            <!-- Project Card 3 -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Project 3</h3>
-                <p class="text-gray-700">Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-indigo-600 hover:underline mt-2 block">View Details</a>
-            </div>
-
-            <!-- Add more project cards as needed -->
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-gray-100 py-16">
+<section id="portfolio" class="bg-gray-100 py-16 mx-auto">
         <div class="container mx-auto">
             <h2 class="text-3xl font-semibold mb-8">Portfolio</h2>
             <p class="text-gray-700"><b><h2>Skills and Expertise</h2></b><br>
 
-                <b>1.Web Development:</b> I have a solid grasp of HTML and CSS, allowing me to create responsive and visually appealing websites. I'm also familiar with MySQL and PHP, enabling me to build dynamic web applications and work with databases.
-                
-               <br> <b>2.SEO (Search Engine Optimization):</b> I understand the importance of SEO in today's digital landscape. I'm committed to optimizing web content to improve visibility and search engine rankings.
-                
-              <br> <b>3.Manual Testing:</b> I have a keen eye for detail and a systematic approach to testing software applications. I'm dedicated to ensuring the quality and reliability of software through rigorous manual testing.</p>
+            <b>1.Web Development:</b> I have a solid grasp of HTML and CSS, allowing me to create responsive and visually appealing websites. I'm also familiar with MySQL and PHP, enabling me to build dynamic web applications and work with databases.
+            
+            <br> <b>2.SEO (Search Engine Optimization):</b> I understand the importance of SEO in today's digital landscape. I'm committed to optimizing web content to improve visibility and search engine rankings.
+            
+            <br> <b>3.Manual Testing:</b> I have a keen eye for detail and a systematic approach to testing software applications. I'm dedicated to ensuring the quality and reliability of software through rigorous manual testing.</p>
+            
             <!-- Skills Section -->
-<section id="skills" class="py-16">
-    <div class="container mx-auto">
-        <h2 class="text-3xl font-semibold mb-8">Skills</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <!-- Skill Card: HTML -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-indigo-600 font-bold">HTML</h3>
-                <img src="image1.png" alt="HTML Logo" class="w-16 h-16 mx-auto my-4">
-                <p class="text-gray-700">Proficient in creating structured web content using HTML5.</p>
-                
-            </div>
-            <!-- Skill Card: CSS -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-indigo-600 font-bold">CSS</h3>
-                <img src="image2.png" alt="CSS Logo" class="w-16 h-16 mx-auto my-4">
-                <p class="text-gray-700">Skilled in styling web pages using CSS3 for a polished look.</p>
-            </div>
-            <!-- Skill Card: JavaScript -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-indigo-600 font-bold">JavaScript</h3>
-                <img src="image4.png" alt="JavaScript Logo" class="w-16 h-16 mx-auto my-4">
-                <p class="text-gray-700">Proficient in adding interactivity and functionality to websites.</p>
-            </div>
-            <!-- Skill Card: PHP -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-indigo-600 font-bold">PHP</h3>
-                <img src="image 3.png" alt="PHP Logo" class="w-16 h-16 mx-auto my-4">
-   <p class="text-gray-700">Skilled in building dynamic web applications using PHP.</p>
-            </div>
-            <!-- Skill Card: MySQL -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-indigo-600 font-bold">MySQL</h3>
-                <img src="image 5.png" alt="My MySQL" class="w-16 h-16 mx-auto my-4">
-
-                <p class="text-gray-700">Experienced in managing and querying databases with MySQL.</p>
-            </div>
-            <!-- Skill Card: Manual Testing -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-indigo-600 font-bold">Manual Testing</h3>
-                <img src="image.png" alt="testing Logo" class="w-16 h-16 mx-auto my-4">
-
-                <p class="text-gray-700">Dedicated to ensuring software quality through rigorous testing.</p>
-            </div>
-            <!-- Skill Card: SEO -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-indigo-600 font-bold">SEO</h3>
-                <img src="image6.png" alt="seo Logo" class="w-16 h-16 mx-auto my-4">
-
-                <p class="text-gray-700">Focused on optimizing web content for improved visibility.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-              <!-- Your portfolio items go here -->
+            <section id="skills" class="py-16">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl font-semibold mb-8">Skills</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <!-- Skill Card: HTML -->
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-indigo-600 font-bold">HTML</h3>
+                            <img src="image1.png" alt="HTML Logo" class="w-16 h-16 mx-auto my-4">
+                            <p class="text-gray-700">Proficient in creating structured web content using HTML5.</p>
+                        </div>
+                        <!-- Skill Card: CSS -->
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-indigo-600 font-bold">CSS</h3>
+                            <img src="image2.png" alt="CSS Logo" class="w-16 h-16 mx-auto my-4">
+                            <p class="text-gray-700">Skilled in styling web pages using CSS3 for a polished look.</p>
+                        </div>
+                        <!-- Skill Card: JavaScript -->
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-indigo-600 font-bold">JavaScript</h3>
+                            <img src="image4.png" alt="JavaScript Logo" class="w-16 h-16 mx-auto my-4">
+                            <p class="text-gray-700">Proficient in adding interactivity and functionality to websites.</p>
+                        </div>
+                        <!-- Skill Card: PHP -->
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-indigo-600 font-bold">PHP</h3>
+                            <img src="image 3.png" alt="PHP Logo" class="w-16 h-16 mx-auto my-4">
+                            <p class="text-gray-700">Skilled in building dynamic web applications using PHP.</p>
+                        </div>
+                        <!-- Skill Card: MySQL -->
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-indigo-600 font-bold">MySQL</h3>
+                            <img src="image 5.png" alt="MySQL Logo" class="w-16 h-16 mx-auto my-4">
+                            <p class="text-gray-700">Experienced in managing and querying databases with MySQL.</p>
+                        </div>
+                        <!-- Skill Card: Manual Testing -->
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-indigo-600 font-bold">Manual Testing</h3>
+                            <img src="image.png" alt="Testing Logo" class="w-16 h-16 mx-auto my-4">
+                            <p class="text-gray-700">Dedicated to ensuring software quality through rigorous testing.</p>
+                        </div>
+                        <!-- Skill Card: SEO -->
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-indigo-600 font-bold">SEO</h3>
+                            <img src="image6.png" alt="SEO Logo" class="w-16 h-16 mx-auto my-4">
+                            <p class="text-gray-700">Focused on optimizing web content for improved visibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Your portfolio items go here -->
         </div>
     </section>
 
     <!-- Contact Form Section -->
-<section id="contact" class="py-16">
-  
-    <div class="container mx-auto">
-        <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
-     <p>I'm always open to new opportunities, collaborations, and learning experiences. Feel free to reach out to me via email at [maharnisha140@gmail.com] or connect with me on LinkedIn. Let's explore the endless possibilities of technology together!</p>
-
-        <!-- Contact Form -->
-        <form action="submit_form.php" method="post" class="max-w-lg mx-auto">
-            <div class="mb-4">
-                <label for="name" class="block text-gray-700 font-medium">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required
-                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none">
-            </div>
-            <div class="mb-4">
-                <label for="email" class="block text-gray-700 font-medium">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required
-                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none">
-            </div>
-            <div class="mb-4">
-                <label for="message" class="block text-gray-700 font-medium">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message here" required
-                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none"></textarea>
-            </div>
-            <div class="mb-6">
-                <button type="submit"
-                    class="bg-indigo-600 text-white py-2 px-4 rounded-full hover:bg-green-700 text-lg transition duration-300 ease-in-out">Send
-                    Message</button>
-            </div>
-        </form>
-    </div>
-</section>
-
-<!-- Footer Section -->
-<footer class="bg-gray-900 text-white py-8">
-    <div class="container mx-auto flex justify-between items-center">
-        <div>
-            <h2 class="text-xl font-semibold">Contact Information</h2>
-            <p>Email: maharnisha140@gmail.com</p>
-            <p>Phone: +91 6398310487</p>
+<section id="contact" class="py-16 mx-auto">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
+            <p>I'm always open to new opportunities, collaborations, and learning experiences. Feel free to reach out to me via email at [maharnisha140@gmail.com] or connect with me on LinkedIn. Let's explore the endless possibilities of technology together!</p>
+    
+            <!-- Contact Form -->
+            <form action="submit_form.php" method="post" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required
+                        class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@example.com" required
+                        class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message here" required
+                        class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-indigo-600 focus:outline-none"></textarea>
+                </div>
+                <div class="mb-6">
+                    <button type="submit"
+                        class="bg-indigo-600 text-white py-2 px-4 rounded-full hover:bg-green-700 text-lg transition duration-300 ease-in-out">Send
+                        Message</button>
+                </div>
+            </form>
         </div>
-        <div>
-            <!-- Add your social media icons and links here -->
-            <a href="#" class="text-white hover:text-gray-400 mr-4">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                        d="M17.25 2.75A2.74 2.74 0 0014.5 0H5.5A2.74 2.74 0 002.75 2.75L2 7.82C2 12.69 5.86 17 10 17s8-4.31 8-9.18l-.75-5.07zm-2.43 7.89a5.58 5.58 0 01-.34 1.76 2.59 2.59 0 01-1.14 1.14c-.5.27-.9.46-1.58.46s-1.08-.19-1.58-.46a2.59 2.59 0 01-1.14-1.14 5.58 5.58 0 01-.34-1.76 4.71 4.71 0 01.34-1.76 2.59 2.59 0 011.14-1.14c.5-.27.9-.46 1.58-.46s1.08.19 1.58.46c.43.24.77.57 1.14 1.14.31.59.57 1.33.34 2.16z" />
-                </svg>
-            </a>
-            <!-- Add more social media icons and links as needed -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <h2 class="text-xl font-semibold">Contact Information</h2>
+                <p>Email: maharnisha140@gmail.com</p>
+                <p>Phone: +91 6398310487</p>
+            </div>
+            <div>
+                <!-- Add your social media icons and links here -->
+                <a href="#" class="text-white hover:text-gray-400 mr-4">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M17.25 2.75A2.74 2.74 0 0014.5 0H5.5A2.74 2.74 0 002.75 2.75L2 7.82C2 12.69 5.86 17 10 17s8-4.31 8-9.18l-.75-5.07zm-2.43 7.89a5.58 5.58 0 01-.34 1.76 2.59 2.59 0 01-1.14 1.14c-.5.27-.9.46-1.58.46s-1.08-.19-1.58-.46a2.59 2.59 0 01-1.14-1.14 5.58 5.58 0 01-.34-1.76 4.71 4.71 0 01.34-1.76 2.59 2.59 0 011.14-1.14c.5-.27.9-.46 1.58-.46s1.08.19 1.58.46c.43.24.77.57 1.14 1.14.31.59.57 1.33.34 2.16z" />
+                    </svg>
+                </a>
+                <!-- Add more social media icons and links as needed -->
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
      <!-- Your contact form goes here -->
         </div>
@@ -305,3 +303,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
